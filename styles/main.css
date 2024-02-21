@@ -1,0 +1,453 @@
+@font-face {
+  font-family: "Bruta Bold";
+  src: url("/fonts/Bruta_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bruta Regular";
+  src: url("/fonts/Bruta_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bruta Light";
+  src: url("/fonts/Bruta_light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sunset Bold";
+  src: url("/fonts/sunset_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sunset Regular";
+  src: url("/fonts/sunset_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sunset Light";
+  src: url("/fonts/sunset_light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arkibal Light";
+  src: url("/fonts/Arkibal_light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arkibal Bold";
+  src: url("/fonts/Arkibal_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arkibal Medium";
+  src: url("/fonts/Arkibal_medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arkibal Regular";
+  src: url("/fonts/Arkibal_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+	overflow-y: scroll;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#main{
+    position: fixed;
+    top: 0px;
+    background-color: #121212;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/imgs/bg_main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+}
+.panels{
+  display:flex;
+  flex-wrap:nowrap;
+  flex-direction: row;
+  position: relative;
+}
+.panel{
+  justify-content: center;
+  align-items: center;
+}
+
+.panel_card{
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#navbar{
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  z-index: 99;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  justify-content: space-around;
+}
+
+#footer{
+  width: 100%;
+  bottom: 50px;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  z-index: 99;
+  justify-content: center;
+}
+
+
+
+
+.nav_item{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Sunset Bold';
+  font-size: 28px;
+  margin: 0px 30px;
+  transition: color .2s linear;
+  position: relative;
+}
+
+.nav_item::before {
+  background: #dea441;
+  content: "";
+  inset: 0;
+  position: absolute;
+  left: -5px;
+  top: 16px;
+  transform: scaleX(0);
+  transform-origin: right;
+  border-radius: 2px;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.nav_item:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.nav_item:hover{
+  color: #dd556c;
+}
+
+.circular{
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+  z-index: 9999;
+  width: 200px;
+  transition: width 0.5s ease-in-out;
+  animation: rotate 8s linear infinite;
+}
+.circular:hover{
+  width: 260px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+
+#loading{
+  background-color: #121212;
+}
+
+
+
+.loading_text{
+  font-size: 2em;
+  color: #fff;
+  font-family: "Sunset Regular";
+  margin-bottom: 0px;
+  z-index: 9;
+  margin-top: 0px;
+
+}
+.welcome {
+  font-size: 11em;
+  color: #fff;
+  font-family: "Bruta Bold";
+  margin-bottom: 0px;
+  letter-spacing: -20px;
+  margin-top: 0px;
+}
+
+.title {
+  font-size: 11em;
+  color: #fff;
+  font-family: "Bruta Bold";
+  margin-bottom: 0px;
+  letter-spacing: -15px;
+  margin-top:0px;
+}
+
+.nova {
+  font-size: 11em;
+  color: #fff;
+  font-family: "Bruta Light";
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+.cb {
+  font-size: 3em;
+  margin-left: 20px;
+  font-family: "Arkibal Light";
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #fff;
+}
+.label {
+  font-size: 1.05em;
+  line-height: 1.3em;
+  font-family: "Book";
+  color: #303030;
+}
+
+.kids:hover #ministerios{
+  background: url('/imgs/bg_main.png');
+}
+
+.tl {
+  font-size: 8em;
+  font-family: "Sunset Regular";
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #fff;
+}
+.lc{
+  font-size: 1.5em;
+  width: 400px;
+  font-family: "Arkibal Regular";
+  margin-bottom: 0px;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.card{
+  width: 278px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  background-color: #000;
+  height: 264px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.card:hover{
+  transform: scale(1.1) rotate(5deg);
+}
+.cdt{
+  font-size: 2em;
+  font-family: "Arkibal Medium";
+  margin-bottom: 0px;
+  margin-top: 10px;
+  color: #fff;
+}
+.cdp{
+  font-size: 1.1em;
+  font-family: "Arkibal Light";
+  margin-bottom: 0px;
+  margin-top: -10px;
+  color: #fff;
+  opacity: 0.9;
+}
+.cdtime{
+  font-size: 2em;
+  font-family: "Arkibal Light";
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #fff;
+}
+#paper{
+  width: 900px;
+  height: 100vh;
+  position: fixed;
+  bottom: -200px;
+  left: 50px;
+  background-image: url('imgs/bg_main.png');
+  background-size: cover;
+  z-index: -1;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #cbcbcb;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #929292;
+  border-radius: 100px;
+}
+
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  user-select: none;
+  width: 12px; 
+  height: 12px;
+  background-color: #fff;
+  border-radius: 100px;
+  pointer-events: none;
+}
+
+.ball {
+  width: 30px;
+  margin-top: -10px;
+  background-image:linear-gradient(90deg, #dea441, #CC2508);
+  filter: blur(10px);
+  margin-left: -10px;
+  height: 30px;
+  z-index: -9;
+  border-radius: 100px;
+}
+
+::selection {
+  color: #dd556c;
+  background: #dea441;
+}
+
+.bruta_bold {
+  font-family: "Bruta Bold";
+}
+.bruta_regular {
+  font-family: "Bruta Regular";
+}
+.bruta_light {
+  font-family: "Bruta Light";
+}
+.sunset_bold {
+  font-family: "Sunset Bold";
+}
+.sunset_regular {
+  font-family: "Sunset Regular";
+}
+.sunset_light {
+  font-family: "Sunset Light";
+}
+
+
+
+
+#about{
+    background-color: #121212;
+}
+
+.headline{
+    color: #fff;
+    font-size: 10em;
+    margin-top: 20px;
+    font-family: "Bruta Bold";
+    margin-bottom: 0px;
+}
+.subheadline{
+    color: #fff;
+    font-size: 3em;
+    margin-top: 20px;
+    font-family: "Sunset Regular";
+    margin-bottom: 0px;
+}
+
+
+
+.banner{
+    width: 300px;
+    height: 500px;
+    border-radius: 150px 150px 0px 0px;
+    opacity: 1;
+    align-self: center;
+    margin: auto;
+    background-size: cover;
+    background-image: url('./mesh_2.png');
+}
+.about-headline{
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Sunset Bold";
+    margin-bottom: 0px;
+}   
+.about-description{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Bruta Regular";
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#services{
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./mesh_1.png');
+    background-size: cover;
+}
+.big{
+    color: #ffffff20;
+    font-size: 10em;
+    text-align: center;
+    font-family: "Sunset Bold";
+    position: absolute;
+    top: 20px;
+    opacity: 1;
+    z-index: -1;
+}
+.about-text{
+    align-items: center;
+    width: 500px;
+    justify-content: center;
+}
