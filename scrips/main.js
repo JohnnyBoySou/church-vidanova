@@ -55,17 +55,17 @@ gsap.to(".bar2",
 
 
 document.querySelector('.kids').addEventListener('mouseover', () => {
-  document.getElementById('paper').style.backgroundImage = 'url(/imgs/kids_bg.png)';
+  document.getElementById('paper').style.backgroundImage = 'url(./imgs/kids_bg.png)';
 });
 document.querySelector('.start').addEventListener('mouseover', () => {
-  document.getElementById('paper').style.backgroundImage = 'url(/imgs/start_bg.png)';
+  document.getElementById('paper').style.backgroundImage = 'url(./imgs/start_bg.png)';
 });
 
 document.querySelector('.deeper').addEventListener('mouseover', () => {
-  document.getElementById('paper').style.backgroundImage = 'url(/imgs/deeper_bg.png)';
+  document.getElementById('paper').style.backgroundImage = 'url(./imgs/deeper_bg.png)';
 });
 document.querySelector('.role').addEventListener('mouseover', () => {
-  document.getElementById('paper').style.backgroundImage = 'url(/imgs/role_bg.png)';
+  document.getElementById('paper').style.backgroundImage = 'url(./imgs/role_bg.png)';
 });
 
 

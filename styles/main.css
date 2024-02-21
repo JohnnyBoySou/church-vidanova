@@ -1,60 +1,60 @@
 @font-face {
   font-family: "Bruta Bold";
-  src: url("/fonts/Bruta_bold.ttf") format("truetype");
+  src: url("./fonts/Bruta_bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Bruta Regular";
-  src: url("/fonts/Bruta_regular.ttf") format("truetype");
+  src: url("./fonts/Bruta_regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Bruta Light";
-  src: url("/fonts/Bruta_light.ttf") format("truetype");
+  src: url("./fonts/Bruta_light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Sunset Bold";
-  src: url("/fonts/sunset_bold.ttf") format("truetype");
+  src: url("./fonts/sunset_bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Sunset Regular";
-  src: url("/fonts/sunset_regular.ttf") format("truetype");
+  src: url("./fonts/sunset_regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Sunset Light";
-  src: url("/fonts/sunset_light.ttf") format("truetype");
+  src: url("./fonts/sunset_light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Arkibal Light";
-  src: url("/fonts/Arkibal_light.ttf") format("truetype");
+  src: url("./fonts/Arkibal_light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Arkibal Bold";
-  src: url("/fonts/Arkibal_bold.ttf") format("truetype");
+  src: url("./fonts/Arkibal_bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Arkibal Medium";
-  src: url("/fonts/Arkibal_medium.ttf") format("truetype");
+  src: url("./fonts/Arkibal_medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Arkibal Regular";
-  src: url("/fonts/Arkibal_regular.ttf") format("truetype");
+  src: url("./fonts/Arkibal_regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -75,7 +75,7 @@ body{
     background-color: #121212;
     width: 100%;
     height: 100vh;
-    background-image: url('/imgs/bg_main.png');
+    background-image: url('./imgs/bg_main.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -250,7 +250,7 @@ body{
 }
 
 .kids:hover #ministerios{
-  background: url('/imgs/bg_main.png');
+  background: url('./imgs/bg_main.png');
 }
 
 .tl {
@@ -309,7 +309,7 @@ body{
   position: fixed;
   bottom: -200px;
   left: 50px;
-  background-image: url('imgs/bg_main.png');
+  background-image: url('./imgs/bg_main.png');
   background-size: cover;
   z-index: -1;
 }
