@@ -24,34 +24,36 @@ gsap.to(".ld1", { width: 500, duration: 2, delay: 2, onComplete: () => {
 }});
 
 
-gsap.to(".bar1", 
-  {
-    width: '500px',
-    duration: 1,
-    ease: "power1.inOut",
-    scrollTrigger: {
-      trigger: "#home",
-      containerAnimation: scrollTween,
-      start: "top center",
-      end: "bottom center",
-      scrub: 1,
-    }
-  }
-)
 
-gsap.to(".bar2", 
-  {
-    width: 200,
-    ease: "power1.inOut",
-    scrollTrigger: {
-      trigger: "#home",
-      containerAnimation: scrollTween,
-      start: "top center",
-      end: "bottom center",
-      scrub: 1,
+
+
+
+function animeOl(el, width, id){
+  gsap.to(el, 
+    {
+      width: width,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: id,
+        containerAnimation: scrollTween,
+        start: "top center",
+        end: "bottom center",
+        scrub: 1,
+      }
     }
-  }
-)
+  )
+
+}
+
+animeOl(".bar1", 500, "#home");
+animeOl(".bar2", 200, "#home");
+animeOl(".bar3", 400, "#cultos");
+animeOl(".bar4", 400, "#ministerios");
+animeOl(".bar5", 400, "#eventos");
+animeOl(".bar6", 100, "#ministerios");
+animeOl(".bar7", 300, "#ministerios");
+
+
 
 
 document.querySelector('.kids').addEventListener('mouseover', () => {
@@ -100,7 +102,8 @@ window.addEventListener('mousemove', (e) => {
       x: x + 1,
       y: y + 1,
       duration: 0.7,
-      transform: `scale(${isTargetLinkOrBtn ? 1.6 : 1})`,
+      transform: `scale(${isTargetLinkOrBtn ? 2 : 1})`,
+      opacity: isTargetLinkOrBtn ? 0.7 : 1,
     });
 });
 

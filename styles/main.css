@@ -66,6 +66,7 @@ html {
 
 body{
   padding: 0;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -86,6 +87,8 @@ body{
   flex-wrap:nowrap;
   flex-direction: row;
   position: relative;
+  padding-right: 30px;
+  margin-right: 30px;
 }
 .panel{
   justify-content: center;
@@ -194,6 +197,7 @@ body{
 
 #loading{
   background-color: #121212;
+  z-index: 9999;
 }
 
 
@@ -207,14 +211,37 @@ body{
   margin-top: 0px;
 
 }
+
 .welcome {
   font-size: 11em;
-  color: #fff;
+  color: transparent;
   font-family: "Bruta Bold";
   margin-bottom: 0px;
   letter-spacing: -20px;
   margin-top: 0px;
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4efb4b189477115.65abf475b1b2f.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-font-smoothing: antialiased;
+  animation: moveBakground 6s linear infinite alternate;
 }
+
+@keyframes moveBakground {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
 
 .title {
   font-size: 11em;
@@ -255,7 +282,7 @@ body{
 
 .tl {
   font-size: 8em;
-  font-family: "Sunset Regular";
+  font-family: "Arkibal Light";
   margin-bottom: 0px;
   margin-top: 0px;
   color: #fff;
@@ -376,4 +403,28 @@ body{
   font-family: "Sunset Light";
 }
 
-
+.min_tt{
+    font-size: 11em;
+    color: #fff;
+    font-family: "Bruta Bold";
+    margin-bottom: 0px;
+    letter-spacing: -20px;
+    margin-top: -20px;
+}
+.min_span{
+    font-size: 3em;
+    color: #fff;
+    font-family: "Arkibal Regular";
+    margin-bottom: 0px;
+    letter-spacing: -2px;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+.min_span2{
+    font-size: 3em;
+    color: #fff;
+    font-family: "Arkibal Light";
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: -20px;
+}
